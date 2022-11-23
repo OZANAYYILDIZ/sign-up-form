@@ -10,12 +10,13 @@ main {
     justify-content: right;
     align-items: center;
     font-family: 'Ubuntu', sans-serif;
+    color: #444444;
 }
 
 .form-container {
     width: 60vw;
     height: 100vh;
-    background-color: #fff;
+    background-color: #f3f3f3;
 }
 
 section.logo {
@@ -24,13 +25,13 @@ section.logo {
     background-position: center;
     display: flex;
     justify-content: right;
-    align-items: center;
 }
 
 .layer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 25vh;
     gap: 40px;
     width: 40vw;
     height: 20vh;
@@ -45,19 +46,59 @@ img {
 
 .top-text {
     height: 30vh;
-    background-color: aqua;
+    padding-left: 40px;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 70%;
 }
 
-.form-div {
+.inputs {
     height: 40vh;
-    background-color: green;
+    background-color: #fff;
+    padding-left: 40px;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(138,138,138,1);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(138,138,138,1);
+    box-shadow: 0px 5px 10px 0px rgba(138,138,138,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4vh;
 }
 
-.create-button {
+.button {
+    margin-top: 20px;
+    padding-left: 40px;
+}
+
+.question {
     height: 30vh;
-    background-color: blanchedalmond;
+    padding-left: 40px;
 }
 
 .input-container {
     display: flex;
+    gap: 40px;
+}
+
+label {
+    font-weight: 300;
+}
+
+input {
+    width: 16vw;
+    height: 3vh;
+    margin-top: 8px;
+    background-color: #f3f3f3;
+    border: solid 1px #dfdfdf;
+    transition: 0.3s;
+}
+
+input:focus {
+    outline-color: rgb(35, 150, 218);
+    background-color: #fff;
+}
+
+.first-text {
+    padding-top: 5vh;
+    padding-bottom: 3vh;
 }
