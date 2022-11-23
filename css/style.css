@@ -4,8 +4,60 @@
 }
 
 main {
-    background: url(../images/background.png);
-    background-color: aquamarine;
-    background-position: center;
+
     height: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form-container {
+    width: 60vw;
+    height: 100vh;
+    background-color: #fff;
+}
+
+section.logo {
+    height: 100vh;
+    background: url(../images/background.jpg);
+    background-position: center;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.layer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 40vw;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: 'Covered By Your Grace', cursive;
+    color: #fff;
+    font-size: 12vh;
+}
+img {
+    height: 90%;
+}
+
+.top-text {
+    height: 30vh;
+    background-color: aqua;
+}
+
+.form-div {
+    height: 40vh;
+    background-color: green;
+}
+
+.create-button {
+    height: 30vh;
+    background-color: blanchedalmond;
+}
+
+.input-container {
+    display: flex;
 }

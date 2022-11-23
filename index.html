@@ -5,13 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Sign Up Form</title>
 </head>
 <body>
 
     <main class="container">
+        <section class="logo">
+            <div class="layer">
+                <img src="images/odin-lined.png" alt="logo">
+                <p>CAMP FIRE</p>
+            </div>
+        </section>
         <section class="form-container">
-            <div class="text">
+            <div class="top-text">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Velit libero, odio facere harum quasi nemo perferendis 
@@ -21,41 +33,47 @@
                     Lorem ipsum dolor sit amet.
                 </p>
             </div>
-            <form action="#" type="post">
-                <div class="full-name">
-                    <div class="first-name">
-                        <label for="first-name">First Name :</label>
-                        <input type="text" id="first-name" name="first-name">
+            <div class="form-div">
+                <form action="#" type="post">
+                    <div class="input-container full-name">
+                        <div class="first-name">
+                            <label for="first-name">First Name :</label>
+                            <div><input type="text" id="first-name" name="first-name" required></div>
+                        </div>
+                        <div class="last-name">
+                            <label for="last-name">Last Name :</label>
+                            <div><input type="text" id="last-name" name="last-name" required></div>
+                        </div>
                     </div>
-                    <div class="last-name">
-                        <label for="last-name">Last Name :</label>
-                        <input type="text" id="last-name" name="last-name">
+                    <div class="input-container contact">
+                        <div class="email">
+                            <label for="email">Email :</label>
+                            <div><input type="email" name="email" id="email" required></div>
+                        </div>
+                        <div class="phone-number">
+                            <label for="phone-number">Phone Number :</label>
+                            <div><input type="number" name="phone-number" id="phone-number" required></div>
+                        </div>
                     </div>
-                </div>
-                <div class="contact">
-                    <div class="email">
-                        <label for="email">Email :</label>
-                        <input type="email" name="email" id="email">
+                    <div class="input-container password-container">
+                        <div class="first-pass">
+                            <label for="first-password">Password :</label>
+                            <div><input type="password" name="first-password" id="first-password" required></div>
+                        </div>
+                        <div class="confirm-pass">
+                            <label for="confirm-password">Confirm Password :</label>
+                            <div><input type="password" name="confirm-password" id="confirm-password" required></div>
+                        </div>
                     </div>
-                    <div class="phone-number">
-                        <label for="phone-number">Phone Number :</label>
-                        <input type="number" name="phone-number" id="phone-number"></div>
-                </div>
-                <div class="password-container">
-                    <div class="first-pass">
-                        <label for="first-password">Password :</label>
-                        <input type="password" name="first-password" id="first-password">
-                    </div>
-                    <div class="confirm-pass">
-                        <label for="confirm-password">Confirm Password :</label>
-                        <input type="password" name="confirm-password" id="confirm-password">
-                    </div>
-                </div>
-            </form>
-            <button class="create-account">Create Account</button>
-            <div class="question">
-                <p>Already have an account? <a href="#">Log in</a></p>
+                    <button class="create-account" type="submit">Create Account</button>
+                </form>
             </div>
+            <div class="create-button">
+                <div class="question">
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </div>
+
         </section>
     </main>
 
