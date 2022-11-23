@@ -17,6 +17,9 @@ main {
     width: 60vw;
     height: 100vh;
     background-color: #f3f3f3;
+    -webkit-box-shadow: -2px 0px 10px 0px rgba(255,255,255,1);
+    -moz-box-shadow: -2px 0px 10px 0px rgba(255,255,255,1);
+    box-shadow: -2px 0px 10px 0px rgba(255,255,255,1);
 }
 
 section.logo {
@@ -47,7 +50,7 @@ img {
 .top-text {
     height: 30vh;
     padding-left: 40px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     width: 70%;
 }
@@ -66,8 +69,19 @@ img {
 }
 
 .button {
-    margin-top: 20px;
+    margin-top: 40px;
     padding-left: 40px;
+}
+.create-account {
+    padding: 16px 48px;
+    background-color: rgb(255, 115, 0);
+    font-size: 24px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 115, 0);
+    -webkit-box-shadow: 0px 5px 10px 0px rgb(255, 115, 0, 0.4);
+    -moz-box-shadow: 0px 5px 10px 0px rgb(255, 115, 0, 0.4);
+    box-shadow: 0px 5px 10px 0px rgb(255, 115, 0, 0.4);
+    color: #fff;
 }
 
 .question {
@@ -91,6 +105,7 @@ input {
     background-color: #f3f3f3;
     border: solid 1px #dfdfdf;
     transition: 0.3s;
+    border-radius: 5px;
 }
 
 input:focus {
@@ -101,4 +116,14 @@ input:focus {
 .first-text {
     padding-top: 5vh;
     padding-bottom: 3vh;
+}
+
+.question {
+    margin-top: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 115, 0);
+    font-weight: 600;
 }
